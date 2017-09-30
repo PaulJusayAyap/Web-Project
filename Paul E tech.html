@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Shoes</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Paul</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Shoes</div>
+    <div class="w3-center w3-padding-16">My Shoes</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="data:image/jpeg;base64,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" 
+      alt="Sandwich" style="width:100%">
+      <h3>Gift from my Girlfriend </h3>
+      <p>It really surprised me! Where did my Girlfriend get the money?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images2.nike.com/is/image/DotCom/PDP_HERO/843975_100_E_PREM/air-zoom-strong-womens-training-shoe.jpg"
+       alt="Steak" style="width:100%">
+      <h3>Overtime Paid off.</h3>
+      <p>Working ovetime sure is tiring! In the end, it paid off!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://content.theathletesfoot.com.au/media/catalog/product/cache/1/thumbnail/614x537/9df78eab33525d08d6e5fb8d27136e95/8/6/863775-0012_1_1.jpg" 
+      alt="Cherries" style="width:100%">
+      <h3>So Lucky! <h3>
+      <p>You won't believe this, I won this in the lottery!</p>
+      <p>Or did I?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://dimg.dillards.com/is/image/DillardsZoom/zoom/nike-womens-flex-supreme-tr-5-training-shoes/04847619_zi_medium_blue_still_blue_black.jpg"
+       alt="Pasta and Wine" style="width:100%">
+      <h3>WOW! THIS SURPRISED ME!</h3>
+      <p>How did I get this!? Is this Miracle?!</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://m.media-amazon.com/images/G/01/zappos/landing/pages/nike-melody/trendingCats/MensShoes._V520002837_.jpg"
+       alt="Popsicle" style="width:100%">
+      <h3>This saved my Life!</h3>
+      <p>This shoe saved my life! I can't believe it!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images-eu.ssl-images-amazon.com/images/I/91gFX8wI4fL._UX395_.jpg"
+       alt="Salmon" style="width:100%">
+      <h3>Did I bought a fake shoe?!</h3>
+      <p>I was on my way home then suddenly the...</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://i.pinimg.com/736x/ef/8a/4e/ef8a4e5929003c4102d571cfd2b998b9--black-nikes-nike-shoes-roshe-black.jpg"
+       alt="Sandwich" style="width:100%">
+      <h3>The Perfect Shoe, A Real Classic</h3>
+      <p>This shoe is so simple and classy. The only problem is that...</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/717U4hB6bGL._UL1500_.jpg" 
+       alt="Croissant" style="width:100%">
+      <h3>I Picked up the rarest shoe in the world?!</h3>
+      <p>Is this even real?! This shoe is worth...</p>
+    </div>
+  </div>
+
+  
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me, The Shoe Man</h3><br>
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.0-0/p206x206/15589720_1613970401952330_6091834729870724380_n.jpg?oh=c155122c07fe984672f724cc9408d3da&oe=5A850B97"
+     alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Shoes!</i></h6>
+      <p>Just me, myself and I, exploring the universe of good Shoes. It's always a satisfying feeling when wearing good quality shoes. I believe that as time goes by, better shoe will be made. More Shooooooes!!!</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+ 
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
